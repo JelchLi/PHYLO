@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Monitor Serial MRUV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Monitor Serial MRUV</h1>
+
+  <!----CONTROLES----->
+  <div class="controls">
+
+    <button id="connectButton">
+      Conectar Arduino
+    </button>
+
+    <button id="resetButton">
+      Reiniciar experimento
+    </button>
+
+    <button id="exportButton">
+      Exportar CSV
+    </button>
+
+    <label>
+      Distancia entre sensores (m):
+      <input
+        type="number"
+        id="distanciaInput"
+        value="0.2"
+        step="0.01"
+      >
+    </label>
+
+  </div>
+
+  <div class="container">
+
+    <!-- ==========================
+        SECCION SUPERIOR
+    ========================== -->
+    <div class="topSection">
+
+      <!-- TABLA -->
+      <div class="panel tablaPanel">
+
+        <h2>Mediciones</h2>
+
+        <div id="tablaContainer">
+
+          <table id="tablaMediciones">
+
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Delta t (s)</th>
+                <th>Velocidad (m/s)</th>
+              </tr>
+            </thead>
+
+            <tbody id="tablaBody">
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </div>
+
+
+      <!-- GRAFICAS -->
+      <div class="panel graficasPanel">
+
+        <div class="graficaHeader">
+
+          <h2 id="tituloGrafica">
+            Velocidad vs Medición
+          </h2>
+
+          <select id="selectorGrafica">
+
+            <option value="medicion">
+              Velocidad vs Medición
+            </option>
+
+            <option value="tiempo">
+              Velocidad vs Tiempo
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <canvas id="graficaPrincipal"></canvas>
+
+      </div>
+
+    </div>
+
+
+    <!-- ==========================
+        EVENTOS SERIALES
+    ========================== -->
+    <div class="panel serialPanel">
+
+      <h2>Eventos seriales</h2>
+
+      <pre id="eventos"></pre>
+
+    </div>
+
+  </div>
+
+
+<!-------chart.js y archivo js (primero se carga el char.js)-------->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

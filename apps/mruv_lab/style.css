@@ -1,0 +1,217 @@
+body {
+
+  font-family: Arial, sans-serif;
+
+  margin: 20px;
+
+  background-color: #f4f4f4;
+}
+
+
+h1 {
+
+  margin-bottom: 20px;
+}
+
+
+button {
+
+  padding: 10px 20px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  margin-bottom: 20px;
+}
+
+
+.container {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+
+.panel {
+
+  background: white;
+
+  padding: 10px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+  border: 2px solid red;
+}
+
+
+#eventos {
+
+  background: #111;
+
+  color: #00ff88;
+
+  padding: 10px;
+
+  border-radius: 5px;
+
+  height: 400px;
+
+  overflow-y: auto;
+
+  font-family: monospace;
+}
+
+
+table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+
+th, td {
+
+  border: 1px solid #ccc;
+
+  padding: 10px;
+
+  text-align: center;
+}
+
+
+th {
+
+  background-color: #eaeaea;
+}
+
+#tablaContainer {
+
+  max-height: 280px;
+
+  overflow-y: auto;
+}
+
+canvas {
+
+  max-height: 280px;
+}
+
+.controls {
+
+  display: flex;
+
+  gap: 15px;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  flex-wrap: wrap;
+}
+
+
+.controls input {
+
+  width: 80px;
+
+  padding: 5px;
+}
+
+/* ==========================
+   LAYOUT PRINCIPAL
+========================== */
+
+.topSection {
+
+  display: flex;
+
+  gap: 20px;
+
+  align-items: flex-start;
+
+  margin-bottom: 20px;
+}
+
+
+/* ==========================
+   PANEL TABLA
+========================== */
+
+.tablaPanel {
+
+  flex: 1;
+}
+
+
+/* ==========================
+   PANEL GRAFICAS
+========================== */
+
+.graficasPanel {
+
+  flex: 2;
+}
+
+
+/* ==========================
+   PANEL SERIAL
+========================== */
+
+.serialPanel {
+
+  width: 100%;
+}
+
+
+/* ==========================
+   SERIAL PEQUEÑO
+========================== */
+
+#eventos {
+
+  background: #111;
+
+  color: #00ff88;
+
+  padding: 10px;
+
+  border-radius: 5px;
+
+  height: 80px;
+
+  overflow-y: auto;
+
+  font-family: monospace;
+
+  font-size: 12px;
+}
+
+/* ==========================
+   HEADER GRAFICA
+========================== */
+
+.graficaHeader {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 10px;
+}
+
+
+.graficaHeader select {
+
+  padding: 5px;
+
+  font-size: 14px;
+}
