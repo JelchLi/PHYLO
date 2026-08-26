@@ -1,0 +1,117 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import '../../styles/mruv-laboratory.css';
+---
+
+<MainLayout title="MRUV Laboratory — PHYLO">
+	<nav class="breadcrumb" aria-label="Breadcrumb">
+		<ol>
+			<li><a href="/">Home</a></li>
+			<li><a href="/laboratories">Laboratories</a></li>
+			<li aria-current="page">MRUV</li>
+		</ol>
+	</nav>
+
+	<header class="mruv-page-header">
+		<p class="mruv-page-header__eyebrow">Uniformly Accelerated Motion</p>
+		<h1>MRUV Laboratory</h1>
+		<p class="mruv-page-header__description">
+			Use guided motion experiments to collect measurements and relate experimental evidence to
+			position, time, velocity, and acceleration.
+		</p>
+		<p class="mruv-status">Available</p>
+	</header>
+
+	<div
+		class="mruv-main-image-placeholder"
+		role="img"
+		aria-label="Placeholder for the MRUV Laboratory main image"
+	>
+		MRUV Laboratory main image placeholder
+	</div>
+
+	<section class="mruv-section mruv-section--overview" aria-labelledby="about-laboratory-title">
+		<div>
+			<h2 id="about-laboratory-title">What is this laboratory?</h2>
+			<p>
+				Students carry out repeatable motion trials, collect timing data from the laboratory
+				setup, and compare the results with the changing motion they observe. The experience
+				connects physical experimentation with evidence-based analysis.
+			</p>
+		</div>
+		<div>
+			<h2>What will students learn?</h2>
+			<ul class="mruv-concepts-list">
+				<li>Position</li>
+				<li>Time</li>
+				<li>Velocity</li>
+				<li>Acceleration</li>
+				<li>Experimental data analysis</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="mruv-section" aria-labelledby="needs-title">
+		<h2 id="needs-title">What do you need?</h2>
+		<ul class="mruv-components-list">
+			<li>MRUV experimental setup</li>
+			<li>Arduino board</li>
+			<li>Two sensors</li>
+		</ul>
+	</section>
+
+	<section class="mruv-section" aria-labelledby="resources-title">
+		<h2 id="resources-title">Resources</h2>
+		<div class="mruv-resources-grid">
+			<article class="mruv-resource">
+				<h3>Documentation</h3>
+				<p>Not available yet.</p>
+			</article>
+			<article class="mruv-resource">
+				<h3>Software</h3>
+				<p>Platform access is not connected yet.</p>
+			</article>
+			<article class="mruv-resource">
+				<h3>GitHub</h3>
+				<p>Repository link not available yet.</p>
+			</article>
+		</div>
+	</section>
+
+	<section class="mruv-section mruv-application" aria-labelledby="application-title">
+		<h2 id="application-title">Interactive Application</h2>
+		<p>
+			The application will support the collection and review of measurements from the MRUV
+			laboratory experience.
+		</p>
+		<button class="mruv-application__button" type="button" disabled>Launch Application</button>
+		<p class="mruv-application__availability">Application connection is not available yet.</p>
+	</section>
+
+	<section class="mruv-section" aria-labelledby="gallery-title">
+		<h2 id="gallery-title">Laboratory Gallery</h2>
+		<div class="mruv-gallery-grid">
+			<div
+				class="mruv-gallery-placeholder"
+				role="img"
+				aria-label="Placeholder for a future MRUV Laboratory photograph"
+			>
+				Future laboratory photograph
+			</div>
+			<div
+				class="mruv-gallery-placeholder"
+				role="img"
+				aria-label="Placeholder for a future MRUV experiment photograph"
+			>
+				Future experiment photograph
+			</div>
+			<div
+				class="mruv-gallery-placeholder"
+				role="img"
+				aria-label="Placeholder for a future MRUV setup photograph"
+			>
+				Future setup photograph
+			</div>
+		</div>
+	</section>
+</MainLayout>

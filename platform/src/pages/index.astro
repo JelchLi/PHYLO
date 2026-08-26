@@ -1,17 +1,100 @@
 ---
-
+import { Image } from 'astro:assets';
+import heroLaboratory from '../assets/images/hero/hero_laboratory.png';
+import MainLayout from '../layouts/MainLayout.astro';
+import '../styles/home.css';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout title="PHYLO — Open Physics Laboratories for Education">
+	<section class="home-section home-hero" aria-labelledby="home-title">
+		<div>
+			<p class="home-eyebrow">Physics Learning Openware</p>
+			<h1 id="home-title" class="home-title">Open Physics Laboratories for Education</h1>
+			<p class="home-intro">
+				PHYLO makes practical physics education more accessible through reproducible laboratories,
+				open resources, and digital tools for the classroom.
+			</p>
+			<a class="home-button" href="/laboratories">Explore Laboratories</a>
+		</div>
+		<div class="hero-image-container">
+			<Image
+				class="hero-image"
+				src={heroLaboratory}
+				alt="PHYLO physics laboratory equipment including a motion track, pendulum, and pulley apparatus"
+			/>
+		</div>
+	</section>
+
+	<div class="home-transition" aria-hidden="true"></div>
+
+	<section class="home-section" aria-labelledby="about-phylo-title">
+		<h2 id="about-phylo-title" class="home-section-title">What is PHYLO?</h2>
+		<p class="home-description">
+			PHYLO is an open educational platform that helps teachers and students build, use, and
+			improve affordable physics laboratory experiences.
+		</p>
+		<div class="pillars-grid">
+			<article class="pillar">
+				<h3>Open Hardware</h3>
+				<p>Reproducible laboratory designs built with accessible materials.</p>
+			</article>
+			<article class="pillar">
+				<h3>Educational Resources</h3>
+				<p>Clear guides and materials that support meaningful classroom experimentation.</p>
+			</article>
+			<article class="pillar">
+				<h3>Interactive Applications</h3>
+				<p>Digital tools that help students observe, record, and understand experiments.</p>
+			</article>
+		</div>
+	</section>
+
+	<section class="home-section" aria-labelledby="featured-laboratories-title">
+		<h2 id="featured-laboratories-title" class="home-section-title">Featured Laboratories</h2>
+		<article class="laboratory-card laboratory-card--featured">
+			<div
+				class="image-placeholder"
+				role="img"
+				aria-label="Placeholder for the MRUV Laboratory image"
+			>
+				MRUV Laboratory image placeholder
+			</div>
+			<div class="laboratory-card__content">
+				<h3 class="laboratory-card__title">MRUV Laboratory</h3>
+				<p>
+					Explore uniformly accelerated motion through a practical laboratory experience designed
+					for physics learning.
+				</p>
+				<a class="home-button" href="/laboratories">View Laboratory</a>
+			</div>
+		</article>
+		<div class="laboratories-grid">
+			<article class="laboratory-card laboratory-card--small">
+				<div
+					class="image-placeholder"
+					role="img"
+					aria-label="Placeholder for the Pendulum laboratory image"
+				>
+					Pendulum image placeholder
+				</div>
+				<div class="laboratory-card__content">
+					<h3 class="laboratory-card__title">Pendulum</h3>
+					<p class="laboratory-card__status">In Development</p>
+				</div>
+			</article>
+			<article class="laboratory-card laboratory-card--small">
+				<div
+					class="image-placeholder"
+					role="img"
+					aria-label="Placeholder for the Statics laboratory image"
+				>
+					Statics image placeholder
+				</div>
+				<div class="laboratory-card__content">
+					<h3 class="laboratory-card__title">Statics</h3>
+					<p class="laboratory-card__status">In Development</p>
+				</div>
+			</article>
+		</div>
+	</section>
+</MainLayout>

@@ -1,0 +1,69 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import '../styles/laboratories.css';
+---
+
+<MainLayout title="Laboratories — PHYLO">
+	<header class="laboratories-page-header">
+		<h1>Laboratories</h1>
+		<p>Explore our growing collection of open-source laboratories.</p>
+	</header>
+
+	<div class="laboratories-page-grid" aria-label="PHYLO laboratories">
+		<article class="laboratory-listing-card laboratory-listing-card--available">
+			<a class="laboratory-listing-card__link" href="/laboratories/mruv">
+				<div
+					class="laboratory-listing-card__image-placeholder"
+					role="img"
+					aria-label="Placeholder for the MRUV Laboratory image"
+				>
+					MRUV Laboratory image placeholder
+				</div>
+				<div class="laboratory-listing-card__content">
+					<h2>MRUV Laboratory</h2>
+					<p class="laboratory-listing-card__description">
+						Hands-on experiments for uniformly accelerated motion.
+					</p>
+					<p class="laboratory-listing-card__status">Available</p>
+					<span class="laboratory-listing-card__button">View Laboratory</span>
+				</div>
+			</a>
+		</article>
+
+		<article class="laboratory-listing-card">
+			<div
+				class="laboratory-listing-card__image-placeholder"
+				role="img"
+				aria-label="Placeholder for the Pendulum laboratory image"
+			>
+				Pendulum image placeholder
+			</div>
+			<div class="laboratory-listing-card__content">
+				<h2>Pendulum</h2>
+				<p class="laboratory-listing-card__description">
+					Explore periodic motion with a reproducible pendulum experiment.
+				</p>
+				<p class="laboratory-listing-card__status">In Development</p>
+				<button class="laboratory-listing-card__button" type="button" disabled>Coming Soon</button>
+			</div>
+		</article>
+
+		<article class="laboratory-listing-card">
+			<div
+				class="laboratory-listing-card__image-placeholder"
+				role="img"
+				aria-label="Placeholder for the Statics laboratory image"
+			>
+				Statics image placeholder
+			</div>
+			<div class="laboratory-listing-card__content">
+				<h2>Statics</h2>
+				<p class="laboratory-listing-card__description">
+					Study equilibrium and forces in a hands-on laboratory setup.
+				</p>
+				<p class="laboratory-listing-card__status">In Development</p>
+				<button class="laboratory-listing-card__button" type="button" disabled>Coming Soon</button>
+			</div>
+		</article>
+	</div>
+</MainLayout>
